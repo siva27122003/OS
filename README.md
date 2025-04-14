@@ -1,5 +1,4 @@
----
-#### **OS – Listing Files and Directories**
+####  **OS – Listing Files and Directories**
 
 | **Command** | **Purpose** |
 |-------------|-------------|
@@ -18,7 +17,7 @@
 
 ---
 
-#### **Usage Examples**
+####  **Usage Examples**
 
 **1. Listing all files and directories**
 ```bash
@@ -82,7 +81,7 @@ find /home -type d -name "folder_name"
 
 ---
 
-### **Some Docker Commands**
+###  **Some Docker Commands**
 
 | **Command** | **Purpose** |
 |-------------|-------------|

@@ -1,10 +1,5 @@
-Here's your corrected and **README-friendly** version with proper markdown alignment and formatting. Markdown doesn't support traditional table alignment for free text unless you use actual markdown tables. So I'll provide two formats:
-
 ---
-
-### ✅ **Option 1: Markdown Table Format** (Best for GitHub README)
-
-#### 🔹 **OS – Listing Files and Directories**
+#### **OS – Listing Files and Directories**
 
 | **Command** | **Purpose** |
 |-------------|-------------|
@@ -23,7 +18,7 @@ Here's your corrected and **README-friendly** version with proper markdown align
 
 ---
 
-#### 🔹 **Usage Examples**
+#### **Usage Examples**
 
 **1. Listing all files and directories**
 ```bash
@@ -87,7 +82,7 @@ find /home -type d -name "folder_name"
 
 ---
 
-### 🐳 **Some Docker Commands**
+### **Some Docker Commands**
 
 | **Command** | **Purpose** |
 |-------------|-------------|
@@ -105,5 +100,3 @@ find /home -type d -name "folder_name"
 | `docker pull <image_name>` | Download an image from Docker Hub |
 
 ---
-
-Let me know if you want this in **PDF**, **Notion**, or **Slide format** too!

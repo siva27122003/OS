@@ -2,18 +2,18 @@
 
 | **Command** | **Purpose** |
 |-------------|-------------|
-| `ls` | List files and directories in the current location |
-| `cd` | Change the directory |
-| `pwd` | Show current directory (print working directory) |
-| `mkdir` | Create a new directory |
-| `rmdir` | Remove an empty directory |
-| `rm` | Remove files or directories |
-| `cp` | Copy files or directories |
-| `mv` | Move or rename files or directories |
-| `touch` | Create a new empty file |
-| `cat` | View content of a file |
-| `find` | Search files and directories |
-| `tree` | Show directory structure in tree format |
+| ls | List files and directories in the current location |
+| cd | Change the directory |
+| pwd | Show current directory (print working directory) |
+| mkdir | Create a new directory |
+| rmdir | Remove an empty directory |
+| rm | Remove files or directories |
+| cp | Copy files or directories |
+| mv | Move or rename files or directories |
+| touch | Create a new empty file |
+| cat | View content of a file |
+| find | Search files and directories |
+| tree | Show directory structure in tree format |
 
 ---
 
@@ -85,17 +85,17 @@ find /home -type d -name "folder_name"
 
 | **Command** | **Purpose** |
 |-------------|-------------|
-| `docker images` | List all available Docker images |
-| `docker run -it <image_name>` | Run a container in interactive mode |
-| `docker ps` | List all running containers |
-| `docker ps -a` | List all containers (including stopped ones) |
-| `docker exec -it <container_id> bash` | Access the running container’s shell |
-| `docker stop <container_id>` | Stop a running container |
-| `docker start <container_id>` | Start a previously stopped container |
-| `docker rm <container_id>` | Remove a container |
-| `docker rmi <image_id>` | Remove an image from the system |
-| `docker commit <container_id> <image_name>` | Save a container's state as a new image |
-| `docker logs <container_id>` | View the logs/output of a container |
-| `docker pull <image_name>` | Download an image from Docker Hub |
+| docker images | List all available Docker images |
+| docker run -it <image_name> | Run a container in interactive mode |
+| docker ps | List all running containers |
+| docker ps -a | List all containers (including stopped ones) |
+| docker exec -it <container_id> bash | Access the running container’s shell |
+| docker stop <container_id> | Stop a running container |
+| docker start <container_id> | Start a previously stopped container |
+| docker rm <container_id> | Remove a container |
+| docker rmi <image_id> | Remove an image from the system |
+| docker commit <container_id> <image_name> | Save a container's state as a new image |
+| docker logs <container_id> | View the logs/output of a container |
+| docker pull <image_name> | Download an image from Docker Hub |
 
 ---

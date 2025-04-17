@@ -1,4 +1,4 @@
-#### ** Linux Networking Commands**
+### ** Linux Networking Commands**
 
 | **Command** | **Purpose** |
 |-------------|-------------|

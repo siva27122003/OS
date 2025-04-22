@@ -1,4 +1,4 @@
-### ** Linux Networking Commands**
+#### ** Linux Networking Commands**
 
 | **Command** | **Purpose** |
 |-------------|-------------|
@@ -21,6 +21,8 @@
 | `ethtool` | Display or change Ethernet device settings |
 
 ---
+
+**** To install necessary packages****
 
 **1. View network interfaces (IP, MAC, etc.)**
 ```bash

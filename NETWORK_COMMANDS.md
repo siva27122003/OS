@@ -1,4 +1,4 @@
-#  Linux Networking Commands - Quick Reference Guide
+#  Linux Networking Commands 
 
 ##  Prerequisites - Tools Installation
 

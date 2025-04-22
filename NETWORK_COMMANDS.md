@@ -55,7 +55,7 @@ sudo apt install net-tools dnsutils traceroute nmap curl wget tcpdump ethtool ip
 
 ---
 
-## 🔍 Port and Service Scanning
+##  Port and Service Scanning
 
 | Command | Description |
 |---------|-------------|
@@ -82,7 +82,7 @@ sudo apt install net-tools dnsutils traceroute nmap curl wget tcpdump ethtool ip
 
 ---
 
-## 🛠 Configuration and Scripting (Windows/Linux)
+##  Configuration and Scripting (Windows/Linux)
 
 | Command | Description |
 |---------|-------------|

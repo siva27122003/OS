@@ -1,95 +1,131 @@
-#### ** Linux Networking Commands**
+#  Linux Networking Commands - Quick Reference Guide
 
-| **Command** | **Purpose** |
-|-------------|-------------|
-| `ifconfig` | View or configure network interfaces (older tool) |
-| `ip a` | Display all IP addresses and interfaces (modern replacement for `ifconfig`) |
-| `ping` | Test network connectivity to a host |
-| `traceroute` | Trace the path packets take to reach a destination |
-| `netstat -tuln` | Show active listening ports and connections |
-| `ss -tuln` | Display socket statistics (faster alternative to `netstat`) |
-| `dig` | Perform DNS lookup for a domain |
-| `nslookup` | Query internet name servers (DNS) |
-| `curl` | Transfer data to/from server (HTTP, FTP, etc.) |
-| `wget` | Download files from the web |
-| `hostname` | Show or set the system hostname |
-| `nmap` | Scan network for open ports and services |
-| `arp -a` | Display IP to MAC address mappings |
-| `ip route` | Show or manipulate the routing table |
-| `nc` / `netcat` | Open TCP/UDP connections, useful for debugging |
-| `tcpdump` | Capture and analyze network packets |
-| `ethtool` | Display or change Ethernet device settings |
+##  Prerequisites - Tools Installation
+
+Before using some networking commands, install the necessary packages:
+
+```bash
+sudo apt update
+sudo apt install net-tools dnsutils traceroute nmap curl wget tcpdump ethtool iproute2 netcat-openbsd
+```
 
 ---
 
-**** To install necessary packages****
+##  Basic Network Information
 
-**1. View network interfaces (IP, MAC, etc.)**
+| Command | Description |
+|---------|-------------|
+| `ifconfig` | Displays network interface configuration (IP, MAC, etc.) |
+| `ip a` | Shows all IP addresses and interfaces (modern alternative to ifconfig) |
+| `hostname` | Displays or sets the system hostname |
+| `ip route` | Shows/manipulates routing table |
+| `arp -a` | Displays ARP table (IP ↔ MAC mapping) |
+| `ethtool [interface]` | Displays/modifies Ethernet device settings |
+
+---
+
+##  Connectivity Testing
+
+| Command | Description |
+|---------|-------------|
+| `ping [host]` | Tests reachability of a host |
+| `traceroute [host]` | Traces the path to a destination host |
+| `mtr [host]` | Real-time combination of ping and traceroute |
+| `nc [host] [port]` | Tests if a specific port is open |
+| `telnet [host] [port]` | Basic port testing (less secure, legacy) |
+
+---
+
+##  DNS and Domain Tools
+
+| Command | Description |
+|---------|-------------|
+| `nslookup [domain]` | Performs DNS lookup |
+| `dig [domain]` | Provides detailed DNS query info |
+
+---
+
+##  Remote Access and Transfer
+
+| Command | Description |
+|---------|-------------|
+| `ssh [user]@[host]` | Secure remote login |
+| `curl [URL]` | Transfers data from/to a URL (HTTP, FTP, etc.) |
+| `wget [URL]` | Downloads files from the web |
+
+---
+
+## 🔍 Port and Service Scanning
+
+| Command | Description |
+|---------|-------------|
+| `netstat -tuln` | Displays all active ports and connections |
+| `ss -tuln` | Faster alternative to netstat for socket statistics |
+| `nmap [IP]` | Scans for open ports and services |
+
+---
+
+##  Packet Inspection and Capturing
+
+| Command | Description |
+|---------|-------------|
+| `tcpdump -i [interface]` | Captures network packets |
+| `tshark -i [interface]` | CLI version of Wireshark |
+
+---
+
+##  Interface & Wireless Configuration
+
+| Command | Description |
+|---------|-------------|
+| `iwconfig` | Configures wireless interfaces (SSID, mode, etc.) |
+
+---
+
+## 🛠 Configuration and Scripting (Windows/Linux)
+
+| Command | Description |
+|---------|-------------|
+| `netsh interface ip show config` (Windows) | Shows IP configuration |
+| `route -n` | Displays routing table in numeric format |
+
+---
+
+##  Listening and Port Forwarding
+
+| Command | Description |
+|---------|-------------|
+| `nc -l -p [port]` | Starts a TCP listener on the specified port |
+
+---
+
+##  Example Usage
+
 ```bash
-ifconfig
+# View all interfaces
 ip a
-```
 
-**2. Test network connectivity**
-```bash
+# Test connectivity
 ping google.com
-```
 
-**3. Trace route to a host**
-```bash
-traceroute google.com
-```
+# Trace packet route
+traceroute example.com
 
-**4. Show active ports and connections**
-```bash
-netstat -tuln
-ss -tuln
-```
+# DNS query
+nslookup openai.com
 
-**5. DNS lookup**
-```bash
-dig example.com
-nslookup example.com
-```
-
-**6. Transfer or download files**
-```bash
-curl https://example.com
+# Download a file
 wget https://example.com/file.zip
+
+# Scan for open ports
+nmap 192.168.0.1
+
+# Capture packets
+sudo tcpdump -i eth0
 ```
 
-**7. View hostname**
-```bash
-hostname
-```
+---
 
-**8. Scan network for open ports**
-```bash
-nmap 192.168.1.1
-```
+---
 
-**9. Show ARP table**
-```bash
-arp -a
-```
 
-**10. View routing table**
-```bash
-ip route
-```
-
-**11. Open a simple TCP listener**
-```bash
-nc -l -p 8080
-```
-
-**12. Capture packets on an interface**
-```bash
-tcpdump -i eth0
-```
-
-**13. View Ethernet settings**
-```bash
-ethtool eth0
-```
-----

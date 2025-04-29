@@ -23,7 +23,7 @@
 
 ---
 
-## 🔧 Build and Run the API Locally
+##  Build and Run the API Locally
 
 ### Step 2: Project Folder Structure
 

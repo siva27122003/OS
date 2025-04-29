@@ -185,5 +185,3 @@ docker run -p 8081:8081 bookapi
 ```
 
 ---
-
-Let me know if you also want a sample `Dockerfile` to build this app into an image.
